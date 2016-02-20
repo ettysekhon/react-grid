@@ -3,7 +3,6 @@ import Grid from '../components/Grid'
 import GridItem from '../components/GridItem'
 
 class Root extends Component {
-
   render () {
     const breakpointSizes = [{
       breakpoint: 'mobile',
@@ -12,7 +11,6 @@ class Root extends Component {
       breakpoint: '',
       size: '1-of-2'
     }];
-
 
     return (
       <Grid verticalAlign='center'>

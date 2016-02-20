@@ -5,7 +5,7 @@ import '../styles/widths/widths.css';
 
 const GridItem = (props) => {
   var componentAttributes = props.breakpointSizes.reduce((previous, bps, i) => {
-    var breakpoint = bps.breakpoint ? bps.breakpoint : 'none';
+    var breakpoint = bps.breakpoint || 'none';
     var size = bps.size;
     previous[`data-breakpoint-${breakpoint}`] = size;
     return previous;
