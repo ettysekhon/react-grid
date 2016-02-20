@@ -1,5 +1,5 @@
 # React Grid:
-A simple React based responsive grid using 2 components (the Grid component and the GridItem component).
+A simple React based responsive grid using 2 components (the [Grid](https://github.com/ettysekhon/react-grid/blob/master/src/client/components/Grid.js) component and the [GridItem](https://github.com/ettysekhon/react-grid/blob/master/src/client/components/GridItem.js) component).
 
 ## cd into folder and run
 
