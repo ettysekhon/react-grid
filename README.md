@@ -15,7 +15,7 @@ $ npm run serve & open http://localhost:8082
   * autoprefixer
   * mixins
   * nesting
-3. Easy grid configuration, just change breakpoints and columns in config.js and run `npm run build` this will generate the width CSS and JS files required for GridItem component.
+3. Easy grid configuration, just change breakpoints and columns in [config.js](https://github.com/ettysekhon/react-grid/blob/master/src/client/config.js) and run `npm run build` this will generate the width CSS and JS files required for GridItem component.
 
 ## Further ideas:
 1. Include Flexbox support.
