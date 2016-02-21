@@ -1,7 +1,33 @@
 # React Grid:
 A simple React based responsive grid using 2 components (the [Grid](https://github.com/ettysekhon/react-grid/blob/master/src/client/components/Grid.js) component and the [GridItem](https://github.com/ettysekhon/react-grid/blob/master/src/client/components/GridItem.js) component).
 
-## cd into folder and run
+# Example
+```
+  render () {
+    const breakpointSizes = [{
+      breakpoint: 'mobile',
+      size: '1-of-1'
+    }, {
+      breakpoint: '',
+      size: '1-of-2'
+    }];
+
+    return (
+      <Grid>
+        <GridItem breakpointSizes={breakpointSizes}>
+          <div className='box'>Box</div>
+        </GridItem>
+        <GridItem breakpointSizes={breakpointSizes}>
+          <div className='box'>Box</div>
+        </GridItem>
+      </Grid>
+    )
+  }
+```
+
+## Running example
+
+cd into folder and run
 
 ```bash
 $ npm install
