@@ -71,8 +71,8 @@ const config = {
 };
 
 if (DEV) {
-  config.entry.push('eventsource-polyfill');
-  config.entry.push('webpack-hot-middleware/client');
+  config.entry.bundle.push('eventsource-polyfill');
+  config.entry.bundle.push('webpack-hot-middleware/client');
   config.plugins.push(new webpack.HotModuleReplacementPlugin());
   config.plugins.push(new webpack.NoErrorsPlugin());
 } else {

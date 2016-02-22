@@ -3,7 +3,7 @@ import express from 'express';
 const app = express();
 const port = 8082;
 
-app.use(express.static('dist'));
+app.use(express.static('../../dist'));
 
 app.listen(port, (error) => {
   if (error) {
