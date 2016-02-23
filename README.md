@@ -8,7 +8,7 @@ A simple React based responsive grid using 2 components (the [Grid](https://gith
       breakpoint: 'mobile',
       size: '1-of-1'
     }, {
-      breakpoint: '',
+      breakpoint: 'desktop',
       size: '1-of-2'
     }];
 
