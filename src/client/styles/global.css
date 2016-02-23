@@ -1,6 +1,9 @@
 :global .box {
-  height: 100px;
-  width: 100px;
-  background-color: $primary-d-2;
-  color: $primary-d-7;
+  min-height: 20px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 2px;
+  text-align: center;
+  border: 1px solid $primary-d-4;
+  color: $primary-d-2;
 }

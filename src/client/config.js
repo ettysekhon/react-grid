@@ -8,8 +8,8 @@ const config = {
       '@media screen and (min-width: 1024px)': 'desktop'
     },
     columns: [1, 2, 3, 4, 5, 12],
-    cssDestination: path.join(__dirname, 'styles/grid/widths.css'),
-    jsDestination: path.join(__dirname, 'styles/grid/widths.js')
+    cssDestination: path.join(__dirname, 'styles/widths/widths.css'),
+    jsDestination: path.join(__dirname, 'styles/widths/widths.js')
   },
   spacing: {
     baseFontSize: 13,

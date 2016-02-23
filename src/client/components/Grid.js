@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React, { Component, PropTypes } from 'react';
 import './Grid.css';
 
 const Grid = (props) => {
@@ -14,7 +14,7 @@ const Grid = (props) => {
 }
 
 Grid.defaultProps = {
-  gutterSize: 'm',
+  gutterSize: 'xs',
   verticalAlign: 'top',
   horizontalAlign: 'left',
   direction: 'ltr',
@@ -22,11 +22,11 @@ Grid.defaultProps = {
 };
 
 Grid.propTypes = {
-  gutterSize: PropTypes.oneOf['xs', 's', 'm', 'l','xl', 'z'],
-  verticalAlign: PropTypes.oneOf['top', 'middle', 'bottom'],
-  horizontalAlign: PropTypes.oneOf['left', 'center', 'right'],
-  direction: PropTypes.oneOf['ltr', 'rtl'],
-  width: PropTypes.oneOf['fitted', 'full']
+  gutterSize: PropTypes.oneOf(['xs', 's', 'm', 'l','xl', 'z']),
+  verticalAlign: PropTypes.oneOf(['top', 'middle', 'bottom']),
+  horizontalAlign: PropTypes.oneOf(['left', 'center', 'right']),
+  direction: PropTypes.oneOf(['ltr', 'rtl']),
+  width: PropTypes.oneOf(['fitted', 'full'])
 };
 
 export default Grid;
