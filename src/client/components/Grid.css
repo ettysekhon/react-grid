@@ -64,12 +64,12 @@
   padding-left: 0;
 }
 
-[data-component="Grid"][data-gutter-size="ltr"] {
+[data-component="Grid"][data-direction="ltr"] {
   direction: ltr;
   text-align: left;
 }
 
-[data-component="Grid"][data-gutter-size="rtl"] {
+[data-component="Grid"][data-direction="rtl"] {
   direction: rtl;
   text-align: left;
 }
