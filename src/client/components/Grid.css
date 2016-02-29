@@ -1,128 +1,128 @@
-[data-component="Grid"] {
+.grid {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: 0;
 }
 
-[data-component="GridItem"] {
+.gridItem {
   display: inline-block;
   font-size: $spacing-base;
 }
 
-[data-component="Grid"][data-gutter-size="xs"] {
+.grid.gutterSize-xs {
   margin-left: -$spacing-xxs;
 }
 
-[data-component="Grid"][data-gutter-size="xs"]  >
-[data-component="GridItem"] {
+.grid.gutterSize-xs  >
+.gridItem {
   padding-left: $spacing-xxs;
 }
 
-[data-component="Grid"][data-gutter-size="s"] {
+.grid.gutterSize-s {
   margin-left: -$spacing-xs;
 }
 
-[data-component="Grid"][data-gutter-size="s"]  >
-[data-component="GridItem"] {
+.grid.gutterSize-s  >
+.gridItem {
   padding-left: $spacing-xs;
 }
 
-[data-component="Grid"][data-gutter-size="m"] {
+.grid.gutterSize-m {
   margin-left: -$spacing-m;
 }
 
-[data-component="Grid"][data-gutter-size="m"]  >
-[data-component="GridItem"] {
+.grid.gutterSize-m  >
+.gridItem {
   padding-left: $spacing-m;
 }
 
-[data-component="Grid"][data-gutter-size="l"] {
+.grid.gutterSize-l {
   margin-left: -$spacing-xl;
 }
 
-[data-component="Grid"][data-gutter-size="l"]  >
-[data-component="GridItem"] {
+.grid.gutterSize-l  >
+.gridItem {
   padding-left: $spacing-xl;
 }
 
-[data-component="Grid"][data-gutter-size="xl"] {
+.grid.gutterSize-xl {
   margin-left: -$spacing-xxl;
 }
 
-[data-component="Grid"][data-gutter-size="xl"]  >
-[data-component="GridItem"] {
+.grid.gutterSize-xl  >
+.gridItem {
   padding-left: $spacing-xxl;
 }
 
-[data-component="Grid"][data-gutter-size="z"] {
+.grid.gutterSize-z {
   margin-left: 0;
 }
 
-[data-component="Grid"][data-gutter-size="z"]  >
-[data-component="GridItem"] {
+.grid.gutterSize-z  >
+.gridItem {
   padding-left: 0;
 }
 
-[data-component="Grid"][data-gutter-size="ltr"] {
+.grid.direction-ltr {
   direction: ltr;
   text-align: left;
 }
 
-[data-component="Grid"][data-gutter-size="rtl"] {
+.grid.direction-rtl {
   direction: rtl;
   text-align: left;
 }
 
-[data-component="Grid"][data-direction="rtl"]  >
-[data-component="GridItem"] {
+.grid.direction-rtl >
+.gridItem {
   direction: ltr;
   text-align: left;
 }
 
-[data-component="Grid"][data-v-align="top"] >
-[data-component="GridItem"] {
+.grid.verticalAlign-top >
+.gridItem {
   vertical-align: top;
 }
 
-[data-component="Grid"][data-v-align="middle"] >
-[data-component="GridItem"] {
+.grid.verticalAlign-middle >
+.gridItem {
   vertical-align: middle;
 }
 
-[data-component="Grid"][data-v-align="bottom"] >
-[data-component="GridItem"] {
+.grid.verticalAlign-bottom >
+.gridItem {
   vertical-align: bottom;
 }
 
-[data-component="Grid"][data-h-align="left"] {
+.grid.horizontalAlign-left {
   text-align: left;
 }
 
-[data-component="Grid"][data-h-align="right"] {
+.grid.horizontalAlign-right {
   text-align: right;
 }
 
-[data-component="Grid"][data-h-align="right"] >
-[data-component="GridItem"] {
+.grid.horizontalAlign-right >
+.gridItem {
   text-align: left;
 }
 
-[data-component="Grid"][data-h-align="center"] {
+.grid.horizontalAlign-center {
   text-align: center;
 }
 
-[data-component="Grid"][data-h-align="center"] >
-[data-component="GridItem"] {
+.grid.horizontalAlign-center >
+.gridItem {
   text-align: left;
 }
 
-[data-component="Grid"][data-width="fitted"] >
-[data-component="GridItem"] {
+.grid.width-fitted >
+.gridItem {
   width: auto;
 }
 
-[data-component="Grid"][data-width="full"] >
-[data-component="GridItem"] {
+.grid.width-full >
+.gridItem {
   width: 100%;
 }

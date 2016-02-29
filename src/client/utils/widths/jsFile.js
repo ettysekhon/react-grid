@@ -5,7 +5,7 @@ const columns = config.grid.columns;
 const destinationFile = config.grid.jsDestination;
 
 const getBreakpoints = (bps) => {
-  return ['', 'none'].concat(Object.keys(bps).map((c) => {
+  return ['hide', 'none'].concat(Object.keys(bps).map((c) => {
     return bps[c];
   }));
 }

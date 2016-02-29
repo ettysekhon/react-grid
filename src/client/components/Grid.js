@@ -1,11 +1,17 @@
-import _ from 'lodash';
 import React, { Component, PropTypes } from 'react';
 import './Grid.css';
+import classnames from 'classnames';
 
 const Grid = (props) => {
-  var gridClasses = `Grid gutterSize-${props.gutterSize} verticalAlign-${props.verticalAlign} horizontalAlign-${props.horizontalAlign} direction-${props.direction} width-${props.width}`;
+  var gridClasses = classnames('grid',
+  `gutterSize-${props.gutterSize}`,
+  `verticalAlign-${props.verticalAlign}`,
+  `horizontalAlign-${props.horizontalAlign}`,
+  `direction-${props.direction}`,
+  `width-${props.width}` );
+
   return (
-    <div className={gridClasses} />
+    <div className={gridClasses}>{props.children}</div>
   )
 }
 

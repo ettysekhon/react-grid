@@ -2,22 +2,23 @@ import React, { Component, PropTypes } from 'react';
 import './Grid.css';
 import widths from '../styles/widths/widths.js';
 import '../styles/widths/widths.css';
+import classnames from 'classnames';
 
 class GridItem extends Component {
   render() {
     var { props } = this;
-    var componentAttributes = props.breakpointSizes.reduce((previous, bps, i) => {
+    var gridItemsClasses = classnames(props.breakpointSizes.reduce((previous, bps) => {
       var breakpoint = bps.breakpoint || 'none';
       var size = bps.size;
-      previous[`data-breakpoint-${breakpoint}`] = size;
+      previous.push([`${breakpoint}-${size}`]);
       return previous;
-    }, {
-      'data-component': 'GridItem'
-    });
+    }, [
+      'gridItem'
+    ]));
 
     return (
       <div
-        {...componentAttributes}
+        className={gridItemsClasses}
         >{props.children}</div>
     )
   }

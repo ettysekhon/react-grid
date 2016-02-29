@@ -1,9 +1,10 @@
 /* eslint no-console:0 */
+import path from 'path';
 import express from 'express';
 const app = express();
-const port = 8082;
+const port = process.env.PORT || 8082;
 
-app.use(express.static('../../dist'));
+app.use(express.static(path.join(__dirname, '../../dist')));
 
 app.listen(port, (error) => {
   if (error) {

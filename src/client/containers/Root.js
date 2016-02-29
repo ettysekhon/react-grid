@@ -17,7 +17,7 @@ class Root extends Component {
       breakpoint: 'mobile',
       size: '1-of-1'
     }, {
-      breakpoint: 'none',
+      breakpoint: 'desktop',
       size: '1-of-3'
     }];
 

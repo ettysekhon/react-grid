@@ -9,7 +9,7 @@ const getBreakpointSizeCss= (denominators, alias) => {
     var css = '';
     for (var numerator = 1; numerator <= denominator; numerator++) {
       var selector = `
-[data-breakpoint-${alias ? alias : 'none'}="${numerator}-of-${denominator}"]`;
+.${alias ? alias : 'none'}-${numerator}-of-${denominator}`;
       css += `${selector} {
   width: ${(numerator/denominator)*100}% !important;
 }`
@@ -19,7 +19,7 @@ const getBreakpointSizeCss= (denominators, alias) => {
   }, '');
 
   var hideCss = `
-[data-breakpoint-${alias ? alias : 'none'}=""] {
+.${alias ? alias : 'none'}-hide {
   display: none !important;
 }`
   return initialCss += hideCss;
